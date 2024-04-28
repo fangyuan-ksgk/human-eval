@@ -298,8 +298,8 @@
 {"task_id": "HumanEval/99", "completion": "    return int(value)\n", "result": "failed: invalid literal for int() with base 10: '14.5'", "passed": false}
 {"task_id": "HumanEval/99", "completion": "    return int(value)\n", "result": "failed: invalid literal for int() with base 10: '14.5'", "passed": false}
 {"task_id": "HumanEval/99", "completion": "    return int(value)\n", "result": "failed: invalid literal for int() with base 10: '14.5'", "passed": false}
-{"task_id": "HumanEval/100", "completion": "    if n == 1:\n        return [1]\n    else:\n        return [n] + make_a_pile(n + 1) if n % 2 else make_a_pile(n + 2)\n", "result": "failed: maximum recursion depth exceeded in comparison", "passed": false}
-{"task_id": "HumanEval/100", "completion": "    if n == 1:\n        return [1]\n    else:\n        return [n] + make_a_pile(n + 1 if n % 2 else n + 2)\n", "result": "failed: maximum recursion depth exceeded in comparison", "passed": false}
+{"task_id": "HumanEval/100", "completion": "    if n == 1:\n        return [1]\n    else:\n        return [n] + make_a_pile(n + 1) if n % 2 else make_a_pile(n + 2)\n", "result": "failed: maximum recursion depth exceeded", "passed": false}
+{"task_id": "HumanEval/100", "completion": "    if n == 1:\n        return [1]\n    else:\n        return [n] + make_a_pile(n + 1 if n % 2 else n + 2)\n", "result": "failed: maximum recursion depth exceeded", "passed": false}
 {"task_id": "HumanEval/100", "completion": "    if n == 1:\n        return [1]\n    else:\n        return [n] + make_a_pile(n-1) if n % 2 else make_a_pile(n-1) + [n]\n", "result": "failed: Test 3", "passed": false}
 {"task_id": "HumanEval/101", "completion": "    return s.split(\", \")\n", "result": "failed: ", "passed": false}
 {"task_id": "HumanEval/101", "completion": "    return s.split(\", \")\n", "result": "failed: ", "passed": false}
